@@ -47,7 +47,7 @@ function init() {
         zoom: 15,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(39.4817, -106.0384), // Breckenridge CO
+        center: new google.maps.LatLng(39.6078137,-106.0454653),//Windy Point
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
