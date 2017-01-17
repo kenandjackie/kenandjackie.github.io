@@ -97,7 +97,7 @@ a:focus {
 }
 
 .navbar-custom .nav li {
-    background-color: {{ site.color.primary-dark }}
+    background-color: rgba(167,155,128,.5);
 }
 
 .navbar-custom .nav li.active {
