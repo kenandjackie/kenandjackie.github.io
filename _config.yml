@@ -6,8 +6,9 @@ description: "Jacqualyn Blizzard & Kenneth Caron are celebrating their wedding o
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary-dark: '#a79b80'
-  links: '#333'
+  background: '#2a363b'
+  links: '#fff'
+
 
 # Footer settings
 footer: Our Footer
