@@ -53,12 +53,13 @@ a {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+    text-decoration: underline;
 }
 
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #11505d;
+    color: {{site.color.links-hover}};
 }
 
 .light {
@@ -97,7 +98,10 @@ a:focus {
 }
 
 .navbar-custom .nav li {
-    background-color: {{site.color.background}};
+    background-color: {{site.color.top-nav-background}};
+}
+
+.navbar-custom .nav li {
     opacity: 0.6;
 }
 
