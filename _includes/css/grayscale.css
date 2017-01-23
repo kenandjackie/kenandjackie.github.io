@@ -101,8 +101,8 @@ a:focus {
     background-color: {{site.color.top-nav-background}};
 }
 
-.navbar-custom .nav li {
-    opacity: 0.6;
+.navbar-custom .nav li a{
+    text-decoration: none;
 }
 
 .navbar-custom .nav li.active {
