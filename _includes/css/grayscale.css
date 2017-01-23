@@ -13,10 +13,19 @@
 
 }
 
+@font-face {
+    font-family: 'bromelloregular';
+    src: url('/fonts/bromello-webfont.woff2') format('woff2'),
+         url('/fonts/bromello-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     width: 100%;
     height: 100%;
-    font-family: 'phosphateinlineroman', Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
     background-color: {{ site.color.background }};
 }
@@ -26,7 +35,9 @@ html {
     height: 100%;
 }
 
-h1,
+h1 {
+        font-family: 'bromelloregular', Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 h2,
 h3,
 h4,
@@ -39,6 +50,10 @@ h6 {
     letter-spacing: 1px;
 
 
+}
+
+.phosphate {
+    font-family: 'phosphateinlineroman', Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 
