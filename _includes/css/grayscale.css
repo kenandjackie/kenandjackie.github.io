@@ -44,6 +44,19 @@ p {
     line-height: 1.5;
 }
 
+.photos ul li {
+    list-style: none;
+}
+
+.photos ul li a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.photos ul li a img {
+    width: 100%;
+}
+
 @media(min-width:767px) {
     p {
         margin: 0 0 35px;
