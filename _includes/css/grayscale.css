@@ -53,7 +53,7 @@ p {
     cursor: pointer;
 }
 
-.photos ul li a img {
+.photos ul li.photo {
     width: 100%;
 }
 
