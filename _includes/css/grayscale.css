@@ -4,10 +4,19 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+@font-face {
+    font-family: 'phosphateinlineroman';
+    src: url('/fonts/ufonts.com_phosphateinline-webfont.woff2') format('woff2'),
+         url('/fonts/ufonts.com_phosphateinline-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'phosphateinlineroman', Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
     background-color: {{ site.color.background }};
 }
@@ -28,7 +37,11 @@ h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
+
+
 }
+
+
 
 h1 {
     font-size: 90px;
@@ -182,7 +195,7 @@ a#rsvp {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(/img/bg1.jpg) no-repeat bottom center scroll;
+    background: url(/img/webbg.svg) no-repeat bottom center scroll;
     background-color: {{ site.color.background }};
     -webkit-background-size: cover;
     -moz-background-size: cover;
