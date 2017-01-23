@@ -34,6 +34,10 @@ h1 {
     font-size: 90px;
 }
 
+h5 {
+    margin-bottom: 15px;
+}
+
 p {
     margin: 0 0 25px;
     font-size: 18px;
@@ -54,6 +58,10 @@ a {
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     text-decoration: underline;
+}
+
+a.no-underline {
+    text-decoration: none;
 }
 
 a:hover,
@@ -290,6 +298,10 @@ a#rsvp {
 @media(min-width:767px) {
     .content-section {
         padding-top: 200px;
+    }
+
+    .content-subection {
+        padding-top: 100px!important;
     }
 
     .download-section {
