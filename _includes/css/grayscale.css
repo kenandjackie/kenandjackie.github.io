@@ -44,16 +44,16 @@ p {
     line-height: 1.5;
 }
 
-.photos ul li {
+ul.photos li {
     list-style: none;
 }
 
-.photos ul li a {
+ul.photos li a {
     text-decoration: none;
     cursor: pointer;
 }
 
-.photos ul li.photo {
+ul.photos li.photo {
     width: 100%;
 }
 
