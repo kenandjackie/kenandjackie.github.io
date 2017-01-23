@@ -44,17 +44,23 @@ p {
     line-height: 1.5;
 }
 
+ul.photos {
+    float: none;
+}
 ul.photos li {
     list-style: none;
+    display: inline-block;
 }
 
 ul.photos li a {
     text-decoration: none;
     cursor: pointer;
+    display: inline-block;
 }
 
-ul.photos li.photo {
+ul.photos li.photo img{
     width: 100%;
+    display: inline-block;
 }
 
 @media(min-width:767px) {
