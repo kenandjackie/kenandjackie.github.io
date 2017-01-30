@@ -1,14 +1,15 @@
 # Site settings
 full-title: Join Us in Colorful Colorado
 title1: Join Us In
-title2: COLORFUL COLORADO
+title2: COLORFUL<br>COLORADO
 email: ken.caron+kenandjackie@gmail.com
 url: https://example.github.io
-description: "Jacqualyn Blizzard & Kenneth Caron are<br> celebrating their wedding on Sunday, July 9th."
+description: "Jacqualyn Blizzard & Kenneth Caron<br>are celebrating their wedding on<br>Sunday, July 9th."
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
   background: '#2a363b'
+  main-background: '#0d3a1d'
   top-nav-background: 'rgba(42, 54, 59, 0.6)'
   links: '#5cd0ff'
   links-hover: '#eee'

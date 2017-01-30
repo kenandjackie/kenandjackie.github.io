@@ -27,7 +27,7 @@ body {
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
-    background-color: {{ site.color.background }};
+    background-color: {{ site.color.main-background }};
 }
 
 html {
@@ -104,7 +104,7 @@ a {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a.no-underline {
@@ -113,8 +113,10 @@ a.no-underline {
 
 a:hover,
 a:focus {
-    color: {{site.color.links-hover}};
+    text-decoration: underline;
+    color: {{site.color.links}};
 }
+
 
 .light {
     font-weight: 400;
@@ -126,6 +128,7 @@ a:focus {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: {{ site.color.background }};
+
 }
 
 .navbar-custom .navbar-brand {
@@ -152,7 +155,6 @@ a:focus {
 }
 
 .navbar-custom .nav li {
-    background-color: {{site.color.top-nav-background}};
     cursor: pointer;
 }
 
@@ -182,15 +184,20 @@ a:focus {
     background-color: rgba(255,255,255,.3);
 }
 
+@media(max-width)
+
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background: 0 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar-custom {
+        background-color: {{site.color.top-nav-background}}
     }
 
     .top-nav-collapse {
@@ -222,9 +229,14 @@ a:focus {
     display: table-cell;
     vertical-align: middle;
 }
-
+@media(max-width:767px) {
+    .intro .intro-body .brand-heading {
+        font-size: 30px;
+    }
+}
 .intro .intro-body .brand-heading {
-    font-size: 40px;
+    font-size: 30px;
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75px 0.966667px 0px, rgb(0, 0, 0) 1.08333px 1.68333px 0px, rgb(0, 0, 0) 0.133333px 2px 0px, rgb(0, 0, 0) -0.833333px 1.81667px 0px, rgb(0, 0, 0) -1.6px 1.2px 0px, rgb(0, 0, 0) -1.98333px 0.283333px 0px, rgb(0, 0, 0) -1.86667px -0.7px 0px, rgb(0, 0, 0) -1.3px -1.51667px 0px, rgb(0, 0, 0) -0.416667px -1.95px 0px, rgb(0, 0, 0) 0.566667px -1.91667px 0px, rgb(0, 0, 0) 1.41667px -1.41667px 0px, rgb(0, 0, 0) 1.91667px -0.566667px 0px;
 }
 
 .intro .intro-body .intro-text {
@@ -238,11 +250,30 @@ a:focus {
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 100px;
+        font-size: 60px;
     }
 
     .intro .intro-body .intro-text {
         font-size: 25px;
+    }
+}
+
+@media(min-width:1199px) {
+    .intro .intro-body .brand-heading {
+        font-size: 65px;
+    }
+}
+
+@media(min-width:1199px) {
+    .intro .intro-body .brand-heading {
+        font-size: 70px;
+    }
+}
+
+@media(min-width:1299px) {
+
+    .intro .intro-body .brand-heading {
+        font-size: 75px;
     }
 }
 
